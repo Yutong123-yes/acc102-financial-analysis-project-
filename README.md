@@ -22,20 +22,13 @@ This analysis is designed for **financial analysts**, **investment researchers**
 - **Time Period**: 2020-2024 (filtered by `typrep = 'A'` to ensure data accuracy)
 - **Data Relevance**: The dataset is closely tied to the business context of the Chinese NEV industry, supporting real-world financial analysis and decision-making.
 
-## Tools & Technologies
-- **Programming Language**: Python 3.9
-- **Libraries**: wrds, pandas, openpyxl, matplotlib
-- **Platform**: Jupyter Notebook, GitHub
-- **Environment**: macOS
-
-## Project Structure
-
-NEV_Financial_Analysis/
-├── 11111.ipynb                # Complete analysis notebook (code + results)
-├── financial_ratios.csv       # Raw data backup (CSV format)
-├── financial_ratios.xlsx      # Final results (Excel format)
-├── financial_ratio_trends.png # Visualization of ratio trends (optional)
-└── README.md                  # Project documentation
+## Methodological Understanding
+This analysis follows rigorous financial analysis principles and Python data processing workflows:
+- **Data Acquisition**: Connected to the professional WRDS-CSMAR database to obtain standardized, audited financial data
+- **Data Cleaning**: Filtered annual year-end data, removed invalid entries, and ensured data consistency
+- **Data Transformation**: Calculated core financial ratios based on accounting standards, generated pivot tables for cross-company comparison
+- **Descriptive Analysis & Visualization**: Summarized performance trends and created visual charts to enhance interpretability
+- **Simple Modeling**: Built a basic performance evaluation framework to support multi-dimensional company comparison
 
 ## How to Run the Code
 1.  **Install Dependencies**:
@@ -67,16 +60,15 @@ This project delivers actionable analytical insights rather than just raw code:
 - **BYD**: Maintained moderate leverage (3.94 in 2024), balancing growth and risk
 - **Changan & Great Wall**: Adopted more conservative leverage strategies, with ratios below 2.75
 
-## Methodological Understanding
-This analysis follows rigorous financial analysis principles and Python data processing workflows:
-- **Data Acquisition**: Connected to the professional WRDS-CSMAR database to obtain standardized, audited financial data
-- **Data Cleaning**: Filtered annual year-end data, removed invalid entries, and ensured data consistency
-- **Data Transformation**: Calculated core financial ratios based on accounting standards, generated pivot tables for cross-company comparison
-- **Descriptive Analysis & Visualization**: Summarized performance trends and created visual charts to enhance interpretability
-- **Simple Modeling**: Built a basic performance evaluation framework to support multi-dimensional company comparison
 
-## Conclusion
-This analysis provides a clear, comprehensive comparison of the financial performance of three leading NEV companies in China, highlighting their competitive advantages and potential risks in the rapidly growing electric vehicle market. It fully meets the requirements of Track 2 (GitHub Data Analysis Project) with standardized code, complete documentation, and actionable analytical insights.
+## Limitations & Future Improvements
+- **Limitations**:
+  - The analysis is limited to three companies and may not fully represent the entire NEV industry.
+  - Only financial ratios are considered; non-financial factors (e.g., R&D investment, market share) are not included.
+- **Future Work**:
+  - Expand the sample size to include more NEV manufacturers.
+  - Add industry benchmarks and peer comparisons.
+  - Incorporate non-financial indicators for a more comprehensive analysis.
 
 ## Author
 [Yutong Zhu] | [2473101]
